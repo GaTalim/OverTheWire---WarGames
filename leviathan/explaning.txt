@@ -1,0 +1,23 @@
+Level 0
+I just used `grep` to search inside the HTML file. The password was right there.
+
+Level 1  
+Used `ltrace` to understand what the executable was doing. It showed some function calls that helped me guess the right input.
+
+Level 2  
+Needed to create a file using `ln` (hard link) to trick the program. It checks for a specific file, and I pointed it to something else. Weird thing: when I used `ltrace` the permission got denied, but when I didn't, it worked.
+
+Level 3  
+`ltrace` made it easy to find the correct password. It was basically being printed through one of the function calls. `strace` wouldn’t have helped as much here.
+
+Level 4  
+The executable outputs a bunch of binary digits. I looked at the ASCII table and translated them manually to find the right input.
+
+Level 5  
+Used `ln` again to point a file the program reads to the actual password file. It doesn’t check paths strictly, so the trick worked.
+
+Level 6  
+I used `gdb` to debug the program. Set a breakpoint on `atoi`, then disassembled `main`. That showed the number being compared in the code, which helped me figure out the input I needed.
+
+Level 7  
+This one continues the logic from the previous levels. After debugging and understanding what the binary expects, I was able to move on using the same kind of reverse engineering.
