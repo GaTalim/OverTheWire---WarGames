@@ -1,0 +1,104 @@
+Level 0 -  
+Just a simple SSH login to start the game. Nothing fancy, just connecting.
+
+Level 1 -  
+List the files and see what's around. Some filenames may not behave normally.
+
+Level 2 -  
+Dealing with files that have spaces in their names. Need to escape or quote properly.
+
+Level 3 -  
+The file isn’t plain text, had to use a command to check its type.
+
+Level 4 -  
+Look through the folder. There’s something readable hidden in one of those files.
+
+Level 5 -  
+Had to find the file that’s ASCII text — used some filters until one made sense.
+
+Level 6 -  
+Used `find` to locate a specific file. It was based on file size and permissions.
+
+Level 7 -  
+Same idea, just more files now. Got to the first page of files and filtered through again.
+
+Level 8 -  
+Used `grep` to look for a pattern inside the files — super handy.
+
+Level 9 -  
+This one needed `uniq`, but it only works on adjacent lines, so had to sort or check carefully.
+
+Level 10 -  
+Used `strings` on a binary to extract some readable stuff.
+
+Level 11 -  
+Base64 decoding — just one command to get the answer.
+
+Level 12 -  
+It was a Caesar cipher. Used `tr` with the right rotation to get it.
+
+Level 13 -  
+The file was compressed multiple times — had to keep unpacking with the right tools.
+
+Level 14 -  
+SSH login using a private key. The `-i` flag was the key here.
+
+Level 15 -  
+Connected to a local service running on the machine — used `localhost`.
+
+Level 16 -  
+Used `openssl s_client` to test connections using different TLS levels.
+
+Level 17 -  
+Ran `nmap` to check all the ports, then used `-A` to get more info and find what I wanted.
+
+Level 18 -  
+Just compared two files using `diff`. One small change gave me what I needed.
+
+Level 19 -  
+Used SSH with the `-t` option to run a shell that didn’t use any config files.
+
+Level 20 -  
+Executed a binary and used `cat` to grab the result from somewhere.
+
+Level 21 -  
+Set up a local listener and passed the data it needed through netcat.
+
+Level 22 -  
+Checked the cron jobs to see what was being run and when.
+
+Level 23 -  
+Found out the script was running as bandit23. Traced where it was being called from.
+
+Level 24 -  
+Made a fake version of the script and put it in the right place so it would run.
+
+Level 25 -  
+Brute-forced a PIN using netcat. Wrote a bash script with a loop and piped it in.
+
+Level 26 -  
+Used a terminal that doesn’t cut off or scroll weird. Needed full output.
+
+Level 27 -  
+This one was easy — just read the password with `cat`.
+
+Level 28 -  
+Used Git for the first time in Bandit. Cloned and inspected it.
+
+Level 29 -  
+Looked into the Git log to find what had been committed.
+
+Level 30 -  
+Searched beyond just the master branch. Found local commits too.
+
+Level 31 -  
+Used `git tag` to list tags and checked their contents.
+
+Level 32 -  
+Pushed a file to the Git server. Not too hard once you get the flow.
+
+Level 33 -  
+Used the `$0` trick to run a subshell and grab the final flag.
+
+Done!  
+That’s it. Finished Bandit. Learned a lot about Linux, the terminal, and basic scripting along the way.
